@@ -1,1 +1,0 @@
-[2025-05-25 00:20:54,159] 50 root - INFO - Data pushed to MongoDB collection: Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'NetworkSecurityML'), 'phishingData')
