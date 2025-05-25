@@ -2,9 +2,10 @@ from datetime import datetime
 import os
 
 from NetworkSecurity.constants import training_pipeline
+from NetworkSecurity.entity.data_ingestion_config import TrainingPipelineConfig
 
 class DataValidationConfig:
-    def __init__(self, training_pipeline_config: training_pipeline):
+    def __init__(self, training_pipeline_config: TrainingPipelineConfig):
         self.data_validation_dir = os.path.join(training_pipeline_config.artifact_dir_path, training_pipeline.DATA_VALIDATION_DIR_NAME)
         self.validated_dir = os.path.join(self.data_validation_dir, training_pipeline.DATA_VALIDATION_VALID_DIR)
         self.invalid_dir = os.path.join(self.data_validation_dir, training_pipeline.DATA_VALIDATION_INVALID_DIR)

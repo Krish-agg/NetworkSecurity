@@ -84,8 +84,9 @@ class NetworkDataValidation:
             is_test_valid = self.validateColumns(test_df)
             is_train_numerical_valid = self.isNumericalColumnExist(train_df)
             is_test_numerical_valid = self.isNumericalColumnExist(test_df)
-            is_data_drift = self.validateDataDrift(train_df, test_df)
-            validation_status = is_train_valid and is_test_valid and is_train_numerical_valid and is_test_numerical_valid and not is_data_drift
+            is_data_drift_valid = self.validateDataDrift(train_df, test_df)
+            #print(is_train_valid, is_test_valid, is_train_numerical_valid, is_test_numerical_valid, is_data_drift_valid)
+            validation_status = is_train_valid and is_test_valid and is_train_numerical_valid and is_test_numerical_valid and is_data_drift_valid
             if validation_status:
                 logging.info("Data validation passed successfully.")
                 dir_path=os.path.dirname(self.data_validation_config.valid_train_file_path)

@@ -1,0 +1,21 @@
+[2025-05-25 18:08:20,566] 64 root - INFO - Starting data ingestion process...
+[2025-05-25 18:08:21,997] 57 root - INFO - Feature data saved to Artifacts\05_25_2025_18_08_16\data_ingestion\feature_store\phishingData.csv
+[2025-05-25 18:08:22,075] 72 root - INFO - Train and test data saved to Artifacts\05_25_2025_18_08_16\data_ingestion\ingested\train.csv and Artifacts\05_25_2025_18_08_16\data_ingestion\ingested\test.csv
+[2025-05-25 18:08:22,076] 18 root - INFO - Network Data Ingestion Module Initialized
+[2025-05-25 18:08:22,085] 22 root - INFO - Network Data Validation Module Initialized
+[2025-05-25 18:08:22,111] 82 root - INFO - Data loaded successfully for validation.
+[2025-05-25 18:08:22,112] 29 root - INFO - Columns validation passed.
+[2025-05-25 18:08:22,112] 29 root - INFO - Columns validation passed.
+[2025-05-25 18:08:22,113] 41 root - INFO - Numerical columns found
+[2025-05-25 18:08:22,113] 41 root - INFO - Numerical columns found
+[2025-05-25 18:08:22,227] 91 root - INFO - Data validation passed successfully.
+[2025-05-25 18:08:22,307] 25 root - INFO - Network Data Validation Completed
+[2025-05-25 18:08:22,307] 27 root - INFO - Network Data Transformation Module Initialized
+[2025-05-25 18:08:22,307] 39 root - INFO - Initiating data transformation process
+[2025-05-25 18:08:22,308] 41 root - INFO - Starting data transformation process
+[2025-05-25 18:08:22,332] 44 root - INFO - Data loaded successfully for transformation
+[2025-05-25 18:08:22,335] 29 root - INFO - Creating data transformation pipeline
+[2025-05-25 18:08:22,335] 31 root - INFO - KNN Imputer initialized
+[2025-05-25 18:08:22,351] 53 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-25 18:08:22,357] 57 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-25 18:08:22,359] 31 root - INFO - Network Data Transformation Completed
