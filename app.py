@@ -8,6 +8,7 @@ ca= certifi.where()
 load_dotenv()
 
 mongoDBURL=os.getenv("MONGO_DB_ATLAS_URL")
+port=os.getenv("PORT")
 
 import pymongo
 from NetworkSecurity.exception.exception import NetworkSecurityException
@@ -97,7 +98,7 @@ async def predict_route(request:Request,file:UploadFile=File(...)):
 if __name__ == "__main__":
     try:
         logging.info("Starting the FastAPI application")
-        app_run(app, host="localhost", port=8000, log_level="info")
+        app_run(app, host="localhost", port=port, log_level="info")
     except Exception as e:
         logging.error(f"Error starting FastAPI application: {e}")
         raise NetworkSecurityException(e, sys)
