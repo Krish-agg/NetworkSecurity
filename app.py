@@ -46,9 +46,12 @@ from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates(directory="./templates")
 
 @app.get("/",tags=["Authentication"])
-async def index():
-    return RedirectResponse(url="/docs")
-
+async def index(request:Request):
+    try:
+        return templates.TemplateResponse("index.html", {"request": request})
+    except Exception as e: 
+        logging.error(f"Error in index endpoint: {e}")
+        raise NetworkSecurityException(e, sys)
 @app.get("/train")
 async def train(request: Request):
     try:

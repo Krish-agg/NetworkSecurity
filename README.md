@@ -73,14 +73,15 @@ This project aims to classify websites as **phishing** or **legitimate** using a
 ```bash
 git clone https://github.com/yourusername/NetworkSecurity.git
 cd NetworkSecurity
-
+```
 
 ### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Run the Script
 ```bash
 python app.py
-
+```
 
