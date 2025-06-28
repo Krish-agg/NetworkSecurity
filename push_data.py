@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 MONGO_DB_URL = os.getenv('MONGO_DB_ATLAS_URL')
 
-#ca=certifi.where()
+ca=certifi.where()
 
 class NetworkDataExtract():
     def __init__(self):

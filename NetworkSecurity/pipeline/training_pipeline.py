@@ -24,9 +24,7 @@ from NetworkSecurity.entity.artifact import (
     ModelTrainerArtifact,
 )
 
-from NetworkSecurity.constants.training_pipeline import TRAINING_BUCKET_NAME
 
-from NetworkSecurity.constants.training_pipeline import SAVED_MODEL_DIR
 
 import sys
 

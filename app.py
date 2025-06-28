@@ -18,8 +18,6 @@ from NetworkSecurity.pipeline.training_pipeline import TrainingPipeline
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile,Request
 from uvicorn import run as app_run
-from fastapi.responses import Response
-from starlette.responses import RedirectResponse
 import pandas as pd
 
 from NetworkSecurity.utils.main_utils.utils import load_object
@@ -82,7 +80,7 @@ async def predict_route(request:Request,file:UploadFile=File(...)):
         preprocesor=load_object("final_model/preprocessor.pkl")
         final_model=load_object("final_model/model.pkl")
         network_model = NetworkModel(preprocessor=preprocesor,model=final_model)
-        print(df.iloc[0])
+        #print(df.iloc[0])
         y_pred = network_model.predict(df)
         print(y_pred)
         df['predicted_column'] = y_pred
